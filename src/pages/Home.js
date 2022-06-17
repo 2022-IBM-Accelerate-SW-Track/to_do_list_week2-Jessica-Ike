@@ -30,7 +30,7 @@ class Home extends Component {
     // Create a array that contains the current array and the new todo item
     // Update the local state with the new array.
 
-    if(this.state.todos.find(t => t === todo)){
+    if(this.state.todos.find(t => t.content === todo.content)){
       return;
     } 
     else{
